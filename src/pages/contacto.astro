@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/card.astro";
 import Footer from "../components/footer.astro";
 ---
 
@@ -8,28 +7,33 @@ import Footer from "../components/footer.astro";
     <section
         class="bg-black h-screen w-screen text-center relative overflow-hidden"
     >
-        <div class="flex items-center justify-around py-32">
-            <div class="flex flex-col max-w-30">
-                <h1 class="text-white text-5xl font-medium">
-                    Aitor Gonzalez Gonzalez
-                </h1>
-                <p class="text-slate-300 text-sm">
-                    Sonrisas en Enfoque, Emociones en Cada Clic
-                </p>
-            </div>
-            <div class="tarjeta flex flex-col my-6">
-                <Card
-                    ruta="https://images.pexels.com/photos/3292366/pexels-photo-3292366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                />
-                <div class="cuerpo-tarjeta">
-                    <h1
-                        class="bg-white text-2xl text-black font-bold p-4 rounded"
-                    >
-                        Aitor Gonzalez Gonzalez
-                    </h1>
+    <div>
+        <header>
+            <h1 class="text-white text-7xl font-medium pt-32">Contacto </h1>
+            <p class="text-slate-300 text-sm">
+                Reserva ya tu cita 📸
+            </p>
+        </header>
+        <main class="flex justify-center py-16">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="https://images.pexels.com/photos/442573/pexels-photo-442573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Aitor Gonzalez</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Si te gustaría llevar mis servicios de fotografía a tu próximo proyecto, evento o sesión de retratos, estaré encantado de trabajar contigo.</p>
+                    <a href="mailto:aitorgg02@hotmail.com" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Contactar
+                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
+        </main>
+    </div>
     </section>
     <Footer />
 </Layout>

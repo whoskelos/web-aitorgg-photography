@@ -1,11 +1,15 @@
 ---
 interface Props {
     ruta: string;
+    enlace?: string;
 }
 
-const { ruta } = Astro.props;
+const { ruta, enlace } = Astro.props;
 ---
 
-<div class="w-80">
-    <img class="aspect-ratio[300/450] h-full object-cover w-full rounded hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-2xl hover:cursor-pointer" src={ruta} alt="Fotografia de ejemplo" />
+<div class="w-60 my-8 md:w-80 shadow-lg shadow-neutral-800 md:shadow-none">
+    <a href={ enlace } target="_blank">
+        <img class=" md:aspect-ratio[300/450] h-full object-cover w-full rounded hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-white hover:cursor-pointer" src={ruta} alt="Fotografia de ejemplo" />
+    </a>
 </div>
+

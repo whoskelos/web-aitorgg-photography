@@ -10,25 +10,25 @@ import Footer from "../components/footer.astro";
     pageDescription="Te presento mi porfolio personal de fotografía"
 >
     <section
-        class="bg-black h-screen w-screen text-center relative overflow-hidden"
+        class="bg-black h-screen w-screen text-center relative overflow-scroll md:overflow-hidden"
     >
         <div class="flex flex-col align-center">
             <header>
-                <h1 class="pt-32 text-white text-7xl font-medium">AitorGG</h1>
-                <p class="text-slate-300 text-sm">
+                <h1 class="text-white text-5xl md:text-7xl font-medium pt-28 md:pt-32">AitorGG</h1>
+                <p class="text-slate-300 text-xs md:text-sm">
                     Cada Instante, una Historia; Cada Foto, una Emoción
                 </p>
             </header>
-            <main class="py-16">
-                <div class="flex justify-around">
+            <main class="md:py-16">
+                <div class="flex flex-col items-center md:flex-row justify-around">
                     <Card
-                        ruta="https://images.pexels.com/photos/4505269/pexels-photo-4505269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        ruta="assets/img/fotografia_1.webp" enlace="https://www.instagram.com/p/CvM75Vstij_/?img_index=1"
                     />
                     <Card
-                        ruta="https://images.pexels.com/photos/4407688/pexels-photo-4407688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        ruta="assets/img/fotografia_2.webp" enlace="https://www.instagram.com/p/Ca2G-JstDtr/?utm_source=ig_web_copy_link"
                     />
                     <Card
-                        ruta="https://images.pexels.com/photos/1982852/pexels-photo-1982852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        ruta="assets/img/fotografia_3.jpg" enlace="https://www.instagram.com/p/CQ6Ago4MBMz/?utm_source=ig_web_copy_link"
                     />
                 </div>
             </main>
