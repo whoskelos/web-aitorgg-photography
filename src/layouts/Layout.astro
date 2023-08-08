@@ -1,0 +1,33 @@
+---
+import Header from "../components/header.astro";
+
+interface Props {
+	pageTitle?: string;
+	pageDescription?: string;
+}
+const { pageTitle, pageDescription } = Astro.props
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={ pageDescription }>
+		<title>AitorGG | { pageTitle }</title>
+	</head>
+</head>
+<body>
+    <Header />
+    <slot />
+</body>
+</html>
+
+<style is:global>
+	@font-face {
+		font-family: "Montserrat-Regular";
+		src: url('../fonts/Montserrat-Regular.ttf');
+	}
+</style>

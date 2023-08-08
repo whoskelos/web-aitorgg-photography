@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout pageTitle="Contacto">
+    <section
+        class="bg-black h-screen w-screen text-center relative overflow-hidden"
+    >
+        <div class="flex items-center justify-around py-32">
+            <div class="flex flex-col max-w-30">
+                <h1 class="text-white text-5xl font-medium">
+                    Aitor Gonzalez Gonzalez
+                </h1>
+                <p class="text-slate-300 text-sm">
+                    Sonrisas en Enfoque, Emociones en Cada Clic
+                </p>
+            </div>
+            <div class="tarjeta flex flex-col my-6">
+                <Card
+                    ruta="https://images.pexels.com/photos/3292366/pexels-photo-3292366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
+                <div class="cuerpo-tarjeta">
+                    <h1
+                        class="bg-white text-2xl text-black font-bold p-4 rounded"
+                    >
+                        Aitor Gonzalez Gonzalez
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer />
+</Layout>

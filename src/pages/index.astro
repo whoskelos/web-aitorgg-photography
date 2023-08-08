@@ -1,15 +1,38 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
+import Footer from "../components/footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+    pageTitle="Inicio"
+    ,
+    pageDescription="Te presento mi porfolio personal de fotografía"
+>
+    <section
+        class="bg-black h-screen w-screen text-center relative overflow-hidden"
+    >
+        <div class="flex flex-col align-center">
+            <header>
+                <h1 class="pt-32 text-white text-7xl font-medium">AitorGG</h1>
+                <p class="text-slate-300 text-sm">
+                    Cada Instante, una Historia; Cada Foto, una Emoción
+                </p>
+            </header>
+            <main class="py-16">
+                <div class="flex justify-around">
+                    <Card
+                        ruta="https://images.pexels.com/photos/4505269/pexels-photo-4505269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <Card
+                        ruta="https://images.pexels.com/photos/4407688/pexels-photo-4407688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                    <Card
+                        ruta="https://images.pexels.com/photos/1982852/pexels-photo-1982852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    />
+                </div>
+            </main>
+        </div>
+    </section>
+	<Footer/>
+</Layout>
